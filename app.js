@@ -8,7 +8,7 @@ app.use(express.json());
 app.use("/api/user", router);
 app.use("/api/Blog", blogRouter);
 
-mongoose.connect('mongodb+srv://Jange:iyDZjdJODyY2X0uW@cluster0.9dxorru.mongodb.net/test')
+mongoose.connect('Mongodb_URI')
 .then(()=>app.listen(5000))
 .then(()=> console.log("connected to database and listened to port 5000"))
 .catch((err)=> console.log(err));
